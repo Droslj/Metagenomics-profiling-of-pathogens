@@ -43,7 +43,7 @@ The report is available here:<br>
 Comparative assembly was performed using MEGAHIT and SPAdes.
 The report is available here:
 
-![Assembly report](/Images/results_v3_Assembly_MEGAHIT_QC_SRR14256425_QUAST_report.html)
+![Assembly report]((https://raw.githubusercontent.com/Droslj/Images/Metagenomics-profiling-of-pathogens/main/results_v3_Assembly_MEGAHIT_QC_SRR14256425_QUAST_report.html)
 
 ## Binning
 
