@@ -16,10 +16,7 @@ The analysis successfully reconstructed a high-quality genome of Escherichia col
 
 # Workflow and Methodology overview
 <br>
-The analysis was performed using the nf-core/mag Pipeline using an orchestrated environment. Complete workflow is provided on Figure 1:<br>
-
-
-**Figure 1: Complete workflow**
+The analysis was performed using the nf-core/mag Pipeline using an orchestrated environment:<br>
 
  (1) Pipeline Deployment <br>
  Orchestrated nf-core/mag pipeline was used to process multi-sample metagenomic datasets. Pipeline was configured to perform raw read QC, assembly, binning, and annotation.<br>
@@ -36,6 +33,16 @@ The analysis was performed using the nf-core/mag Pipeline using an orchestrated 
  (5) Functional Genomics <br>
  Using characterization of specialized metabolic pathways, including Type I Secretion Systems (Hemolysin) and Toxin-Antitoxin modules, bacterial virulence and mobility was assesed.<br>
  <br>
+
+Complete workflow is provided on Figure 1:<br>
+<br>
+
+![Workflow](/Images/Complete_flow.png)
+
+**Figure 1: Complete workflow**
+
+
+
 ## Quality Control
 <br>
 Read quality was assessed via FastQC; MultiQC was used to aggregate global run statistics.<br>
