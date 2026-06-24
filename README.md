@@ -45,7 +45,7 @@ The report is available here:
 
 ![Assembly report]((https://raw.githubusercontent.com/Droslj/Images/Metagenomics-profiling-of-pathogens/main/results_v3_Assembly_MEGAHIT_QC_SRR14256425_QUAST_report.html)
 
-![View QUAST Report](https://raw.githubusercontent.com/Droslj/Metagenomics-profiling-of-pathogens/main/results_v3_Assembly_MEGAHIT_QC_SRR14256425_QUAST_report.html)
+![View QUAST Report](https://droslj.github.io/Metagenomics-profiling-of-pathogens/Images/results_v3_Assembly_MEGAHIT_QC_SRR14256425_QUAST_report.html)
 
 ## Binning
 
