@@ -67,16 +67,18 @@ Metagenome-assembled genomes (MAGs) were recovered using MetaBAT2.
 
 ## Annotation
 
-Structural annotation was conducted via Prodigal, with functional and taxonomic assignment performed through EggNOG-mapper.
+Structural annotation was conducted via Prodigal, with functional and taxonomic assignment performed through EggNOG-mapper. Prodigal identified ~6.000 faa sequences (for one of the samples, the SRR14256425) which I ran through EggNOG mapper.
 The report is available here:
 
-[View EggNOG Report](https://droslj.github.io/Metagenomics-profiling-of-pathogens/Images/results_v3_Assembly_MEGAHIT_QC_SRR14256425_QUAST_report.html)
+![View EggNOG Report](/Images/eggNOG.tabular)
 
 
 ## Key Results & Assembly Statistics
 
-The assembly produced a low-complexity, high-contiguity result consistent with a dominant bacterial isolate.
+The assembly produced a low-complexity, high-contiguity result consistent with a dominant bacterial isolate.<br> 
+The complete list of organisms identified is available here:<br>
 
+![View EggNOG Report](/Images/organisms_identified.tabular)
 
 ## Functional Annotation & Virulence Factors
 
@@ -90,6 +92,24 @@ Detection of vagC and vapC modules, suggesting a plasmid-stabilization mechanism
 
 (3) Mobility 
 Presence of Transposases and Phage Integrases adjacent to virulence genes, indicating high potential for horizontal gene transfer.
+
+# The "Big Three" Domains
+
+You have successfully detected life from across the biological spectrum:
+
+(1) Bacteria: The vast majority of your 5,800 genes belong here (Proteobacteria, Firmicutes, Actinobacteria).
+
+(2) Viruses: You found Myoviridae, Siphoviridae, and Podoviridae. These are Bacteriophages—viruses that infect and kill the bacteria in your sample.
+
+(3) Eukaryota/Metazoa: Seeing "Metazoa" (animals) and "Opisthokonta" (fungi/animals) usually indicates DNA from the host (if this was a clinical sample) or microscopic multicellular life in the environment.
+
+# The Dominant "Pathogen" Signature
+
+The entries labeled "155864.EDL933" are the most important for your earlier discovery.
+
+EDL933 is the specific name of the original "reference" strain for E. coli O157:H7.
+
+The fact that you have multiple specific EDL933 sub-strains listed confirms that your "Big Winner" bacterium is indeed this specific foodborne pathogen.
 
 ## Technical Troubleshooting & Cloud Optimization
 
