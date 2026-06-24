@@ -35,7 +35,9 @@ The analysis was performed using the nf-core/mag Pipeline using an orchestrated 
 Read quality was assessed via FastQC; MultiQC was used to aggregate global run statistics.<br>
 The report is available here:<br>
 <br>
+
 [View MultiQC Report](https://droslj.github.io/Metagenomics-profiling-of-pathogens/Images/multiqc_report.html)
+
 <br>
 
 ## Assembly
