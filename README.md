@@ -1,19 +1,12 @@
 # Metagenomics-profiling-of-pathogens
-
 Metagenomic Characterization and Virulence Profiling of Shiga Toxin-producing E. coli (STEC) using nf-core/mag
 
-**Keyword**<br>
-Nextflow (nf-core) pipelines on cloud infrastructure (Seqera/GCP), Troubleshooting resource allocation for high-memory tasks, Performing functional annotation to identify pathogenic virulence factors.
+**Keywords**<br>
+Nextflow (nf-core) pipeline orchestration, Cloud infrastructure (Seqera/GCP), Troubleshooting resource allocation for high-memory tasks, Functional annotation, Identifying pathogenic virulence factors
 
-
-Bioinformatics Tools: Nextflow (nf-core), MEGAHIT, SPAdes, MetaBAT2, Prodigal, EggNOG-mapper, QUAST, MultiQC.
-Platforms: Seqera (formerly Tower), Google Cloud Platform (GCP).
-Languages/Formats: Bash/Linux CLI, GFF3, FASTA/FASTQ, YAML/Nextflow Config.
-
-Metagenomic Analysis Report: Escherichia coli O157:H7 Virulence Profiling
-Date: January 2026
+**Platform used**
 Infrastructure: Seqera Platform / Google Cloud Platform
-Pipeline: nf-core/mag v3.01. 
+Pipeline: nf-core/mag v3.01
 
 **Overview**
 This project involved the end-to-end bioinformatic processing of metagenomic short-read data. Data was taken from the following project [1].<br> 
@@ -21,30 +14,36 @@ The analysis successfully reconstructed a high-quality genome of Escherichia col
 <br>
 # Workflow and Methodology overview
 <br>
-The analysis was performed using the nf-core/mag Pipeline using an orchestrated environment. These are the main points:
+The analysis was performed using the nf-core/mag Pipeline using an orchestrated environment:<br>
+ (1) Pipeline Deployment <br>
+ Orchestrated nf-core/mag pipeline was used to process multi-sample metagenomic datasets. Pipeline was configured to perform raw read QC, assembly, binning, and annotation.<br>
+ 
+ (2) Cloud Infrastructure & Optimization <br> 
+ Managed cloud computing resources via Seqera Platform required optimizing nextflow.config settings (CPUs, RAM, Time) to handle memory-intensive tasks and resolving Google Bucket storage bottlenecks.<br>
 
- (1) Pipeline Deployment 
- Orchestrated nf-core/mag pipeline was used to process multi-sample metagenomic datasets. Pipeline was configured to perform raw read QC, assembly, binning, and annotation.
+ (3) Genomic Assembly & QC <br>
+ Pipeline produces some high-quality assemblies (N50 > 100 Kbp) using SPAdes and MEGAHIT. Results were validated using QUAST and MultiQC reports.<br>
  
- (2) Cloud Infrastructure & Optimization -> 
- Managed cloud computing resources via Seqera Platform required optimizing nextflow.config settings (CPUs, RAM, Time) to handle memory-intensive tasks and resolving Google Bucket storage bottlenecks.
-
- (3) Genomic Assembly & QC 
- Pipeline produces some high-quality assemblies (N50 > 100 Kbp) using SPAdes and MEGAHIT. Results were validated using QUAST and MultiQC reports.
+ (4) Pathogen Identification <br>
+ Escherichia coli O157:H7 from environmental/clinical samples was identified and characterized by analyzing Prodigal gene predictions and EggNOG-mapper functional assignments.<br>
  
- (4) Pathogen Identification 
- Escherichia coli O157:H7 from environmental/clinical samples was identified and characterized by analyzing Prodigal gene predictions and EggNOG-mapper functional assignments.
- 
- (5) Functional Genomics 
- Using characterization of specialized metabolic pathways, including Type I Secretion Systems (Hemolysin) and Toxin-Antitoxin modules, bacterial virulence and mobility was assesed
- .
+ (5) Functional Genomics <br>
+ Using characterization of specialized metabolic pathways, including Type I Secretion Systems (Hemolysin) and Toxin-Antitoxin modules, bacterial virulence and mobility was assesed.<br>
+ <br>
 ## Quality Control
-
-Read quality was assessed via FastQC; MultiQC was used to aggregate global run statistics.
+<br>
+Read quality was assessed via FastQC; MultiQC was used to aggregate global run statistics.<br>
+The report is available here:<br>
+<br>
+![MultiQC report](/Images/multiqc_report.html)
+<br>
 
 ## Assembly
 
 Comparative assembly was performed using MEGAHIT and SPAdes.
+The report is available here:
+
+![Assembly report](/Images/results_v3_Assembly_MEGAHIT_QC_SRR14256425_QUAST_report.html)
 
 ## Binning
 
