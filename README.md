@@ -2,7 +2,7 @@
 Metagenomic Characterization and Virulence Profiling of Shiga Toxin-producing E. coli (STEC) using nf-core/mag
 
 **Keywords**<br>
-Nextflow (nf-core) pipeline orchestration, Cloud infrastructure (Seqera/GCP), Troubleshooting resource allocation for high-memory tasks, Functional annotation, Identifying pathogenic virulence factors
+Nextflow (nf-core) pipeline orchestration, Cloud infrastructure (Seqera/GCP), Troubleshooting resource allocation for high-memory tasks, Functional annotation, Identifying pathogenic virulence fact[...]
 
 **Platform used**
 Infrastructure: Seqera Platform / Google Cloud Platform
@@ -10,7 +10,7 @@ Pipeline: nf-core/mag v3.01
 
 **Overview**
 This project involved the end-to-end bioinformatic processing of metagenomic short-read data. Data was taken from the following project [1].<br> 
-The analysis successfully reconstructed a high-quality genome of Escherichia coli O157:H7 strain and identified critical virulence factors, including hemolysin secretion systems and toxin-antitoxin modules, indicating a highly pathogenic profile.
+The analysis successfully reconstructed a high-quality genome of Escherichia coli O157:H7 strain and identified critical virulence factors, including hemolysin secretion systems and toxin-antitoxi[...]
 <br>
 # Workflow and Methodology overview
 <br>
@@ -19,7 +19,7 @@ The analysis was performed using the nf-core/mag Pipeline using an orchestrated 
  Orchestrated nf-core/mag pipeline was used to process multi-sample metagenomic datasets. Pipeline was configured to perform raw read QC, assembly, binning, and annotation.<br>
  
  (2) Cloud Infrastructure & Optimization <br> 
- Managed cloud computing resources via Seqera Platform required optimizing nextflow.config settings (CPUs, RAM, Time) to handle memory-intensive tasks and resolving Google Bucket storage bottlenecks.<br>
+ Managed cloud computing resources via Seqera Platform required optimizing nextflow.config settings (CPUs, RAM, Time) to handle memory-intensive tasks and resolving Google Bucket storage bottlenec[...]
 
  (3) Genomic Assembly & QC <br>
  Pipeline produces some high-quality assemblies (N50 > 100 Kbp) using SPAdes and MEGAHIT. Results were validated using QUAST and MultiQC reports.<br>
@@ -35,7 +35,7 @@ The analysis was performed using the nf-core/mag Pipeline using an orchestrated 
 Read quality was assessed via FastQC; MultiQC was used to aggregate global run statistics.<br>
 The report is available here:<br>
 <br>
-![MultiQC report](/Images/multiqc_report.html)
+[View MultiQC Report](https://droslj.github.io/Metagenomics-profiling-of-pathogens/Images/multiqc_report.html)
 <br>
 
 ## Assembly
@@ -43,9 +43,7 @@ The report is available here:<br>
 Comparative assembly was performed using MEGAHIT and SPAdes.
 The report is available here:
 
-![Assembly report]((https://raw.githubusercontent.com/Droslj/Images/Metagenomics-profiling-of-pathogens/main/results_v3_Assembly_MEGAHIT_QC_SRR14256425_QUAST_report.html)
-
-![View QUAST Report](https://droslj.github.io/Metagenomics-profiling-of-pathogens/Images/results_v3_Assembly_MEGAHIT_QC_SRR14256425_QUAST_report.html)
+[View QUAST Report](https://droslj.github.io/Metagenomics-profiling-of-pathogens/Images/results_v3_Assembly_MEGAHIT_QC_SRR14256425_QUAST_report.html)
 
 ## Binning
 
@@ -78,7 +76,7 @@ A significant portion of this project involved managing cloud-scale computationa
 Resolving "Out of Memory" (OOM) errors during binning by adjusting nextflow.config to optimize RAM usage on 112GB GCP instances.
 
 (2) Modular Execution: 
-Utilized Nextflow’s -resume feature and selective module skipping (skip_gtdbtk) to prioritize functional output over high-resource taxonomic indexing.
+Utilized Nextflow's -resume feature and selective module skipping (skip_gtdbtk) to prioritize functional output over high-resource taxonomic indexing.
 
 
 3. The "Technical Skills" Checklist
@@ -102,4 +100,4 @@ Since you successfully identified the pO157 virulence markers, you might want to
 "Metagenomic Characterization and Virulence Profiling of Shiga Toxin-producing E. coli (STEC) using nf-core/mag."
 
 **References**
-[1] PulseNet Escherichia coli and Shigella genome sequencing, https://www.ncbi.nlm.nih.gov/bioproject/PRJNA218110 (SRR14256425) 
+[1] PulseNet Escherichia coli and Shigella genome sequencing, https://www.ncbi.nlm.nih.gov/bioproject/PRJNA218110 (SRR14256425)
