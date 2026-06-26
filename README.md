@@ -72,6 +72,7 @@ The report is available here:
 
 ![View EggNOG Report](/Images/eggNOG.tabular)
 
+This list contains about 5,800+ annotated genes.
 
 ## Key Results & Assembly Statistics
 
@@ -80,38 +81,43 @@ The complete list of organisms identified is available here:<br>
 
 ![View EggNOG Report](/Images/organisms_identified.tabular)
 
-## Functional Annotation & Virulence Factors
+# Functional profiling of transcripts
 
-Annotation of 5,800+ genes revealed a complex pathogenic toolkit, primarily localized on highly mobile genetic elements:
+In order to tvsualize the functional landscape of the isolate I used the COG_category. EggNOG mapper attempts to assign functionality to all the transcripts in the COG_category column. Due to the design, when a protein has multiple functions, eggNOG-mapper assigns multiple letters to it (like CE, CF, JKL, or OU). So, before visualization, it was neccessary to collapse the categories to primary category. This gives a better overview of the functional landscape of this isolate (see Figure 2).
 
-(1) Hemolysin Operon (hlyCABD) 
-I identified complete Type I Secretion System (T1SS) on contig k141_656. This system is responsible for the secretion of RTX toxins (hemolysins) that damage host cell membranes.
+![Functional landscape](/Images/COG_catgories.tabular)
 
-(2) Toxin-Antitoxin (TA) Systems 
-Detection of vagC and vapC modules, suggesting a plasmid-stabilization mechanism that ensures the retention of virulence factors.
+**Figure 2: Functional landscape of the isolate SRR14256425**
 
-(3) Mobility 
-Presence of Transposases and Phage Integrases adjacent to virulence genes, indicating high potential for horizontal gene transfer.
+**Comments on Functional landscape**
 
-# The "Big Three" Domains
+Following significant categories can be observed in this schematic:<br>
 
-You have successfully detected life from across the biological spectrum:
+(1) Metabolic section 
+Significant blocks representing Amino acid transport, Carbohydrate transport, and Inorganic ion transport show an organism that is heavily optimized to scavenge nutrients rapidly, which is highly characteristic of a gut-dwelling enteric bacterium like Escherichia coli.
 
-(1) Bacteria: The vast majority of your 5,800 genes belong here (Proteobacteria, Firmicutes, Actinobacteria).
+(2) Growth section
+Significant portion of the isolate represents sections dedicated to Transcription, Translation, and Replication, recombination and repair which indicates a highly active, rapidly dividing cell population.
 
-(2) Viruses: You found Myoviridae, Siphoviridae, and Podoviridae. These are Bacteriophages—viruses that infect and kill the bacteria in your sample.
+(3) Specialized sections
+There are distinct slices for Cell motility and Defense mechanisms which prove that this isn't just a passive microbe; it has the active machinery to move, colonize, and defend itself against host threats or antibiotics.
 
-(3) Eukaryota/Metazoa: Seeing "Metazoa" (animals) and "Opisthokonta" (fungi/animals) usually indicates DNA from the host (if this was a clinical sample) or microscopic multicellular life in the environment.
+## Cell motility
 
-# The Dominant "Pathogen" Signature
+This category contains flagellar and chemotactic genes. Cell motility is an important factor in virulence, and a high number of entries in this section means that the isolate is highly mobile and optimized for colonization.<br> 
+This indicates that pathogen contains an intact, multi-operon flagellar regulon scattered across a few highly contiguous assembly blocks. Elements from the following functional categories were detected:
+ (1) Flagellar Biogenesis genes (fli & flg genes)
+ (2) Chemotaxis genes (che & tar/tsr genes).
 
-The entries labeled "155864.EDL933" are the most important for your earlier discovery.
+## Virulence / Defense mechanisms
 
-EDL933 is the specific name of the original "reference" strain for E. coli O157:H7.
+This category defines the pathogenic potential of the strain. Following elements were detected:
+ - Hemolysin Operon (hlyCABD) => Identified a complete Type I Secretion System (T1SS). This system is responsible for the secretion of RTX toxins (hemolysins) that damage host cell membranes
+ - Toxin-Antitoxin (TA) Systems => Detection of vagC and vapC modules, suggesting a plasmid-stabilization mechanism that ensures the retention of virulence factors
+ - Mobility => Presence of Transposases and Phage Integrases adjacent to virulence genes, indicating high potential for horizontal gene transfer
 
-The fact that you have multiple specific EDL933 sub-strains listed confirms that your "Big Winner" bacterium is indeed this specific foodborne pathogen.
 
-## Technical Troubleshooting & Cloud Optimization
+# Technical Troubleshooting & Cloud Optimization
 
 A significant portion of this project involved managing cloud-scale computational constraints:
 
