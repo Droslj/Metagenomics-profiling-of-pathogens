@@ -79,7 +79,7 @@ This list contains about 5,800+ annotated genes.
 The assembly produced a low-complexity, high-contiguity result consistent with a dominant bacterial isolate.<br> 
 The complete list of organisms identified is available here:<br>
 
-![View EggNOG Report](/Images/organisms_identified.tabular)
+![Microorganisms detected in the isolate](/Images/organisms_identified.tabular)
 
 # Functional profiling of transcripts
 
