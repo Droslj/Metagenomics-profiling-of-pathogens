@@ -77,17 +77,19 @@ This list contains about 5,800+ annotated genes.
 ## Key Results & Assembly Statistics
 
 The assembly produced a low-complexity, high-contiguity result consistent with a dominant bacterial isolate.<br> 
-The complete list of organisms identified is available here:<br>
+The complete list of organisms identified is shown on Figure 2:<br>
 
 ![Microorganisms detected in the isolate](/Images/organisms_identified.png)
 
+**Figure 2: Microorganisms detected in the isolate SRR14256425**
+
 # Functional profiling of transcripts
 
-In order to tvsualize the functional landscape of the isolate I used the COG_category. EggNOG mapper attempts to assign functionality to all the transcripts in the COG_category column. Due to the design, when a protein has multiple functions, eggNOG-mapper assigns multiple letters to it (like CE, CF, JKL, or OU). So, before visualization, it was neccessary to collapse the categories to primary category. This gives a better overview of the functional landscape of this isolate (see Figure 2).
+In order to tvsualize the functional landscape of the isolate I used the COG_category. EggNOG mapper attempts to assign functionality to all the transcripts in the COG_category column. Due to the design, when a protein has multiple functions, eggNOG-mapper assigns multiple letters to it (like CE, CF, JKL, or OU). So, before visualization, it was neccessary to collapse the categories to primary category. This gives a better overview of the functional landscape of this isolate (see Figure 3).
 
 ![Functional landscape](/Images/COG_categories.png)
 
-**Figure 2: Functional landscape of the isolate SRR14256425**
+**Figure 3: Functional landscape of the isolate SRR14256425**
 
 **Comments on Functional landscape**
 
