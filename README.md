@@ -92,41 +92,41 @@ In order to tvsualize the functional landscape of the isolate I used the COG_cat
 **Comments on Functional landscape**
 
 Following significant categories can be observed in this schematic:<br>
-
-(1) Metabolic section 
-Significant blocks representing Amino acid transport, Carbohydrate transport, and Inorganic ion transport show an organism that is heavily optimized to scavenge nutrients rapidly, which is highly characteristic of a gut-dwelling enteric bacterium like Escherichia coli.
-
-(2) Growth section
-Significant portion of the isolate represents sections dedicated to Transcription, Translation, and Replication, recombination and repair which indicates a highly active, rapidly dividing cell population.
-
-(3) Specialized sections
-There are distinct slices for Cell motility and Defense mechanisms which prove that this isn't just a passive microbe; it has the active machinery to move, colonize, and defend itself against host threats or antibiotics.
-
+<br>
+(1) Metabolic section <br>
+Significant blocks representing Amino acid transport, Carbohydrate transport, and Inorganic ion transport show an organism that is heavily optimized to scavenge nutrients rapidly, which is highly characteristic of a gut-dwelling enteric bacterium like Escherichia coli.<br>
+<br>
+(2) Growth section<br>
+Significant portion of the isolate represents sections dedicated to Transcription, Translation, and Replication, recombination and repair which indicates a highly active, rapidly dividing cell population.<br>
+<br>
+(3) Specialized sections<br>
+There are distinct slices for Cell motility and Defense mechanisms which prove that this isn't just a passive microbe; it has the active machinery to move, colonize, and defend itself against host threats or antibiotics.<br>
+<br>
 ## Cell motility
 
 This category contains flagellar and chemotactic genes. Cell motility is an important factor in virulence, and a high number of entries in this section means that the isolate is highly mobile and optimized for colonization.<br> 
-This indicates that pathogen contains an intact, multi-operon flagellar regulon scattered across a few highly contiguous assembly blocks. Elements from the following functional categories were detected:
- (1) Flagellar Biogenesis genes (fli & flg genes)
- (2) Chemotaxis genes (che & tar/tsr genes).
-
+This indicates that pathogen contains an intact, multi-operon flagellar regulon scattered across a few highly contiguous assembly blocks. Elements from the following functional categories were detected:<br>
+ (1) Flagellar Biogenesis genes (fli & flg genes)<br>
+ (2) Chemotaxis genes (che & tar/tsr genes).<br>
+<br>
 ## Virulence / Defense mechanisms
-
-This category defines the pathogenic potential of the strain. Following elements were detected:
- - Hemolysin Operon (hlyCABD) => Identified a complete Type I Secretion System (T1SS). This system is responsible for the secretion of RTX toxins (hemolysins) that damage host cell membranes
- - Toxin-Antitoxin (TA) Systems => Detection of vagC and vapC modules, suggesting a plasmid-stabilization mechanism that ensures the retention of virulence factors
- - Mobility => Presence of Transposases and Phage Integrases adjacent to virulence genes, indicating high potential for horizontal gene transfer
-
+<br>
+This category defines the pathogenic potential of the strain. Following elements were detected:<br>
+ - Hemolysin Operon (hlyCABD) => Identified a complete Type I Secretion System (T1SS). This system is responsible for the secretion of RTX toxins (hemolysins) that damage host cell membranes<br>
+ - Toxin-Antitoxin (TA) Systems => Detection of vagC and vapC modules, suggesting a plasmid-stabilization mechanism that ensures the retention of virulence factors<br>
+ - Mobility => Presence of Transposases and Phage Integrases adjacent to virulence genes, indicating high potential for horizontal gene transfer<br>
+<br>
 
 # Technical Troubleshooting & Cloud Optimization
 
-A significant portion of this project involved managing cloud-scale computational constraints:
+A significant portion of this project involved managing cloud-scale computational constraints:<br>
 
-(1) Resource Allocation 
-Resolving "Out of Memory" (OOM) errors during binning by adjusting nextflow.config to optimize RAM usage on a 112GB GCP instance.
+(1) Resource Allocation <br>
+Resolving "Out of Memory" (OOM) errors during binning by adjusting nextflow.config to optimize RAM usage on a 112GB GCP instance.<br>
 
-(2) Modular Execution: 
-Utilizing Nextflow's -resume feature and selective module skipping (skip_gtdbtk) to prioritize functional output over high-resource taxonomic indexing.
+(2) Modular Execution: <br>
+Utilizing Nextflow's -resume feature and selective module skipping (skip_gtdbtk) to prioritize functional output over high-resource taxonomic indexing.<br>
+<br>
 
-
-**References**
+**References**<br>
 [1] PulseNet Escherichia coli and Shigella genome sequencing, https://www.ncbi.nlm.nih.gov/bioproject/PRJNA218110 (SRR14256425)
