@@ -4,14 +4,13 @@ Metagenomic Characterization and Virulence Profiling of Shiga Toxin-producing E.
 **Keywords**<br>
 Nextflow (nf-core) pipeline orchestration, Cloud infrastructure (Seqera/GCP), Troubleshooting resource allocation for high-memory tasks, Functional annotation, Identifying pathogenic virulence factors
 
-**Platform used**
-Infrastructure: Seqera Platform / Google Cloud Platform
-Pipeline: nf-core/mag v3.01
+**Platform used**<br>
+Infrastructure: Seqera Platform / Google Cloud Platform<br>
+Pipeline: nf-core/mag v3.01<br>
 
-**Overview**
+**Overview**<br>
 This project involved the end-to-end bioinformatic processing of metagenomic short-read data. Data was taken from the following project [1].<br> 
-The analysis successfully reconstructed a high-quality genome of Escherichia coli O157:H7 strain and identified critical virulence factors, including hemolysin secretion systems and toxin-antitoxin system
-
+The analysis successfully reconstructed a high-quality genome of Escherichia coli O157:H7 strain and identified critical virulence factors, including hemolysin secretion systems and toxin-antitoxin system<br>
 <br>
 
 # Workflow and Methodology overview
@@ -22,7 +21,7 @@ The analysis was performed using the nf-core/mag Pipeline using an orchestrated 
  Orchestrated nf-core/mag pipeline was used to process multi-sample metagenomic datasets. Pipeline was configured to perform raw read QC, assembly, binning, and annotation.<br>
  
  (2) Cloud Infrastructure & Optimization <br> 
- Managed cloud computing resources via Seqera Platform required optimizing nextflow.config settings (CPUs, RAM, Time) to handle memory-intensive tasks and resolving Google Bucket storage bottlenec[...]
+ Managed cloud computing resources via Seqera Platform required optimizing nextflow.config settings (CPUs, RAM, Time) to handle memory-intensive tasks and resolving Google Bucket storage bottlenecks.
 
  (3) Genomic Assembly & QC <br>
  Pipeline produces some high-quality assemblies (N50 > 100 Kbp) using SPAdes and MEGAHIT. Results were validated using QUAST and MultiQC reports.<br>
@@ -40,8 +39,7 @@ Complete workflow is provided on Figure 1:<br>
 ![Workflow](/Images/Complete_flow.png)
 
 **Figure 1: Complete workflow**
-
-
+<br>
 
 ## Quality Control
 <br>
@@ -55,24 +53,24 @@ The report is available here:<br>
 
 ## Assembly
 
-Comparative assembly was performed using MEGAHIT and SPAdes.
+Comparative assembly was performed using MEGAHIT and SPAdes.<br>
 The report is available here:
 
 [View QUAST Report](https://droslj.github.io/Metagenomics-profiling-of-pathogens/Images/results_v3_Assembly_MEGAHIT_QC_SRR14256425_QUAST_report.html)
 
 ## Binning
 
-Metagenome-assembled genomes (MAGs) were recovered using MetaBAT2.
+Metagenome-assembled genomes (MAGs) were recovered using MetaBAT2.<br>
 
 
 ## Annotation
 
 Structural annotation was conducted via Prodigal, with functional and taxonomic assignment performed through EggNOG-mapper. Prodigal identified ~6.000 faa sequences (for one of the samples, the SRR14256425) which I ran through EggNOG mapper.
-The report is available here:
+The report is available here:<br>
 
 ![View EggNOG Report](/Images/eggNOG.tabular)
 
-This list contains about 5,800+ annotated genes.
+This list contains about 5,800+ annotated genes.<br>
 
 ## Key Results & Assembly Statistics
 
@@ -85,7 +83,7 @@ The complete list of organisms identified is shown on Figure 2:<br>
 
 # Functional profiling of transcripts
 
-In order to tvsualize the functional landscape of the isolate I used the COG_category. EggNOG mapper attempts to assign functionality to all the transcripts in the COG_category column. Due to the design, when a protein has multiple functions, eggNOG-mapper assigns multiple letters to it (like CE, CF, JKL, or OU). So, before visualization, it was neccessary to collapse the categories to primary category. This gives a better overview of the functional landscape of this isolate (see Figure 3).
+In order to tvsualize the functional landscape of the isolate I used the COG_category. EggNOG mapper attempts to assign functionality to all the transcripts in the COG_category column. Due to the design, when a protein has multiple functions, eggNOG-mapper assigns multiple letters to it (like CE, CF, JKL, or OU). So, before visualization, it was neccessary to collapse the categories to primary category. This gives a better overview of the functional landscape of this isolate (see Figure 3).<br>
 
 ![Functional landscape](/Images/COG_categories.png)
 
