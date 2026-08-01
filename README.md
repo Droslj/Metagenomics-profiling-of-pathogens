@@ -137,6 +137,7 @@ Scanning the Description column in the final list of transcripts for word "resis
 5. DNA Damage & Oxidative Stress Defenses<br>
  - Universal Stress Proteins (uspA, uspC, uspD, uspE): Critical for surviving DNA-damaging agents, oxidative shock, and nutrient starvation during host infection.<br>
 <br>
+
 ## Cell motility
 <br>
 Filtering the COG_primary column final list of transcripts for motility category (Primary COG = N, 196 entries) contains entries for many cell motility facilitating proteins, most important of which are flagellar and chemotactic genes. Cell motility is an important factor in virulence, and a high number of entries in this section means that the isolate is highly mobile and optimized for colonization. High number of transcripts in this category indicates that pathogen contains an intact, multi-operon flagellar regulon scattered across a few highly contiguous assembly blocks. <br>
@@ -152,7 +153,6 @@ Virulence category defines the pathogenic potential of the strain. Following ele
  - Toxin-Antitoxin (TA) Systems => Detection of vagC and vapC modules, suggesting a plasmid-stabilization mechanism that ensures the retention of virulence factors<br>
  - Mobility => Presence of Transposases and Phage Integrases adjacent to virulence genes, indicating high potential for horizontal gene transfer<br>
 <br>
-
 
 
 # Technical Troubleshooting & Cloud Optimization
