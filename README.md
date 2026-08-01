@@ -142,8 +142,8 @@ Scanning the Description column in the final list of transcripts for word "resis
 <br>
 Filtering the COG_primary column final list of transcripts for motility category (Primary COG = N, 196 entries) contains entries for many cell motility facilitating proteins, most important of which are flagellar and chemotactic genes. Cell motility is an important factor in virulence, and a high number of entries in this section means that the isolate is highly mobile and optimized for colonization. High number of transcripts in this category indicates that pathogen contains an intact, multi-operon flagellar regulon scattered across a few highly contiguous assembly blocks. <br>
 Elements from the following functional categories were detected:<br>
- (1) Flagellar Biogenesis genes (fli & flg genes)<br>
- (2) Chemotaxis genes (che & tar/tsr genes).<br>
+ - Flagellar Biogenesis genes (fli & flg genes)<br>
+ - Chemotaxis genes (che & tar/tsr genes).<br>
 <br>
 
 ## Virulence / Defense mechanisms
@@ -154,14 +154,13 @@ Virulence category defines the pathogenic potential of the strain. Following ele
  - Mobility => Presence of Transposases and Phage Integrases adjacent to virulence genes, indicating high potential for horizontal gene transfer<br>
 <br>
 
-
 # Technical Troubleshooting & Cloud Optimization
 
 A significant portion of this project involved managing cloud-scale computational constraints:<br>
-
+<br>
 (1) Resource Allocation <br>
 Resolving "Out of Memory" (OOM) errors during binning by adjusting nextflow.config to optimize RAM usage on a 112GB GCP instance.<br>
-
+<br>
 (2) Modular Execution: <br>
 Utilizing Nextflow's -resume feature and selective module skipping (skip_gtdbtk) to prioritize functional output over high-resource taxonomic indexing.<br>
 <br>
