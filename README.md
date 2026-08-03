@@ -113,7 +113,7 @@ Metagenomic data is assigned to COG (Clusters of Orthologous Groups) category co
 
 ## High confidence virulence factors
 
-Scanning the Description column in the final list of transcripts for word "resistance" disclosed extensive resistance and host defense profile. Specifically, E. coli isolate features these major physiological defense mechanisms:<br>
+Scanning the Description column in the final list of transcripts for word "resistance" disclosed extensive resistance and host defense profile. Specifically, E. coli isolate features these major physiological defense mechanisms:
 1. Multidrug & Antibiotic Efflux Pumps<br>
  - Tripartite Efflux Machinery (mdtA, mdtB, mdtC, mdtE, mdtF): The MdtABC and MdtEF complexes confer resistance to novobiocin, deoxycholate, and aminoglycosides.<br>
  - Major Facilitator Superfamily (MFS) & Emr Systems (emrA, emrB, emrD, emrY, mdtL): Multidrug transporters pumping out fluoroquinolones, tetracyclines, and uncouplers.<br>
