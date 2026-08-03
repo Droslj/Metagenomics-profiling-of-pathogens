@@ -113,29 +113,29 @@ Metagenomic data is assigned to COG (Clusters of Orthologous Groups) category co
 
 ## High confidence virulence factors
 
-Scanning the Description column in the final list of transcripts for word "resistance" disclosed extensive resistance and host defense profile. Specifically, E. coli isolate features these major physiological defense mechanisms:
-1. Multidrug & Antibiotic Efflux Pumps<br>
- - Tripartite Efflux Machinery (mdtA, mdtB, mdtC, mdtE, mdtF): The MdtABC and MdtEF complexes confer resistance to novobiocin, deoxycholate, and aminoglycosides.<br>
- - Major Facilitator Superfamily (MFS) & Emr Systems (emrA, emrB, emrD, emrY, mdtL): Multidrug transporters pumping out fluoroquinolones, tetracyclines, and uncouplers.<br>
- - Specific Drug Resistance (mdtG, mdtH, mdtO, mdtP, mdtQ, sugE): Conferring resistance to fosfomycin, norfloxacin, enoxacin, puromycin, and quaternary ammonium disinfectants.<br>
-<br>
-2. Master Resistance & Stress Regulators<br>
- - Multiple Antibiotic Resistance Operon (marA & marR): marA transcriptionally activates systemic multidrug resistance and downregulates outer membrane porins.<br>
- - Acid Resistance System (gadE, gadA, adiC, clcB): Enables the pathogen to survive extreme acidity (pH ~2) inside the host stomach, ensuring safe transit to the intestines.<br>
- - Two-Component System (phoP / phoQ & pmrD): Regulates resistance to host antimicrobial peptides (AMPs) and low-magnesium stress environments.<br>
-<br>
-3. Antimicrobial Peptide & Envelope Modification<br>
- - L-Ara4N Lipid A Modification (arnA, arnB, arnC, arnT ): Synthesizes and transfers L-Ara4N to Lipid A (LPS), neutralizing the negative charge of the outer membrane. This renders the cell resistant to polymyxins (like colistin) and host cationic antimicrobial peptides.<br>
- - Phosphoethanolamine modification of Lipid A and undecaprenyl diphosphate recycling (eptA & uppP): Adding further envelope stability against bacitracin and peptides.<br>
-<br>
-4. Heavy Metal Resistance & Host Immune Evasion<br>
- - Tellurite Resistance (terB & tehB): A classic genomic marker strongly associated with pathogenic Shiga toxin-producing E. coli (STEC) lineages such as O157:H7.<br>
- - Complement Resistance (ylpA / traT): Outer membrane proteins that inhibit the host complement cascade, preventing serum killing in blood/tissues.<br>
- - Arsenite and copper/silver efflux systems (arsB, cusA/B/F/S, cutA) : Enables heavy metal detoxification .<br>
-<br>
-5. DNA Damage & Oxidative Stress Defenses<br>
- - Universal Stress Proteins (uspA, uspC, uspD, uspE): Critical for surviving DNA-damaging agents, oxidative shock, and nutrient starvation during host infection.<br>
-<br>
+Scanning the Description column in the final list of transcripts for the word "resistance" revealed an extensive resistance and host-defense profile. The E. coli isolate contains the following high-confidence elements:
+
+1. Multidrug & antibiotic efflux pumps
+Tripartite efflux machinery: mdtA, mdtB, mdtC, mdtE, mdtF — the MdtABC and MdtEF complexes (resistance to novobiocin, deoxycholate, aminoglycosides).
+Major Facilitator Superfamily (MFS) & Emr systems: emrA, emrB, emrD, emrY, mdtL — multidrug transporters (fluoroquinolones, tetracyclines, uncouplers).
+Specific drug-resistance genes: mdtG, mdtH, mdtO, mdtP, mdtQ, sugE — (e.g., fosfomycin, norfloxacin, enoxacin, puromycin, quaternary ammonium compounds).
+
+2. Master resistance & stress regulators
+Multiple Antibiotic Resistance operon: marA, marR — marA activates multidrug resistance and can downregulate outer membrane porins.
+Acid resistance system: gadE, gadA, adiC, clcB — enables survival in extremely low pH.
+Two-component systems: phoP/phoQ, pmrD — regulate resistance to host antimicrobial peptides and low-magnesium stress.
+Antimicrobial peptide & envelope modification
+
+3. L-Ara4N lipid A modification: arnA, arnB, arnC, arnT — modifies lipid A (LPS) to reduce negative charge and decrease peptide binding.
+Phosphoethanolamine transfer and recycling: eptA, uppP — contributes to envelope stability and resistance to bacitracin/peptides.
+
+4. Heavy metal resistance & host immune evasion
+Tellurite resistance: terB, tehB — marker often associated with pathogenic STEC lineages (e.g., O157:H7).
+Complement resistance: ylpA / traT — outer membrane proteins that inhibit complement-mediated killing.
+Arsenite and copper/silver efflux systems: arsB, cusA, cusB, cusF, cusS, cutA — heavy metal detoxification.
+
+5. DNA damage & oxidative stress defenses
+Universal stress proteins: uspA, uspC, uspD, uspE — help survive DNA-damaging agents, oxidative shock, and nutrient starvation.
 
 ## Cell motility
 <br>
