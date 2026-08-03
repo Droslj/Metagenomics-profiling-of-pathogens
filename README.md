@@ -115,11 +115,6 @@ Metagenomic data is assigned to COG (Clusters of Orthologous Groups) category co
 
 Scanning the Description column in the final list of transcripts for word "resistance" disclosed extensive resistance and host defense profile. Specifically, E. coli isolate features these major physiological defense mechanisms:<br>
 
-1. Multidrug & Antibiotic Efflux Pumps
- - Tripartite Efflux Machinery (mdtA, mdtB, mdtC, mdtE, mdtF): The MdtABC and MdtEF complexes confer resistance to novobiocin, deoxycholate, and aminoglycosides.
- - Major Facilitator Superfamily (MFS) & Emr Systems (emrA, emrB, emrD, emrY, mdtL): Multidrug transporters pumping out fluoroquinolones, tetracyclines, and uncouplers.
- - Specific Drug Resistance (mdtG, mdtH, mdtO, mdtP, mdtQ, sugE): Conferring resistance to fosfomycin, norfloxacin, enoxacin, puromycin, and quaternary ammonium disinfectants.
-<br>
 2. Master Resistance & Stress Regulators<br>
  - Multiple Antibiotic Resistance Operon (marA & marR): marA transcriptionally activates systemic multidrug resistance and downregulates outer membrane porins.<br>
  - Acid Resistance System (gadE, gadA, adiC, clcB): Enables the pathogen to survive extreme acidity (pH ~2) inside the host stomach, ensuring safe transit to the intestines.<br>
